@@ -1,6 +1,7 @@
 from pydantic import BaseModel
 from datetime import date
 
+
 class ContactBase(BaseModel):
     first_name: str
     last_name: str
@@ -9,11 +10,14 @@ class ContactBase(BaseModel):
     birth_date: date
     additional_info: str
 
+
 class ContactCreate(ContactBase):
     pass
 
+
 class ContactUpdate(ContactBase):
     pass
+
 
 class Contact(ContactBase):
     id: int

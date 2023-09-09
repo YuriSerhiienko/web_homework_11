@@ -12,6 +12,24 @@ venv\Scripts\activate
   "additional_info": "test"
 }
 
+{
+  "first_name": "Max",
+  "last_name": "Maximum",
+  "email": "mmaximum@gmail.com",
+  "phone_number": "0741491457",
+  "birth_date": "1997-09-11",
+  "additional_info": "test"
+}
+
+{
+  "first_name": "Den",
+  "last_name": "Denisimo",
+  "email": "denisimo@gmail.com",
+  "phone_number": "0348543547",
+  "birth_date": "1997-09-20",
+  "additional_info": "test"
+}
+
 CREATE TABLE contacts (
     id SERIAL PRIMARY KEY,
     first_name VARCHAR(255) NOT NULL,
