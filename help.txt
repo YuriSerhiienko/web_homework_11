@@ -1,0 +1,25 @@
+docker run --name my-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -d postgres
+
+python -m venv venv
+venv\Scripts\activate
+
+{
+  "first_name": "Yurii",
+  "last_name": "Sergienko",
+  "email": "yurasergienko97@gmail.com",
+  "phone_number": "0730591997",
+  "birth_date": "1997-05-09",
+  "additional_info": "test"
+}
+
+CREATE TABLE contacts (
+    id SERIAL PRIMARY KEY,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    phone_number VARCHAR(20) NOT NULL,
+    birth_date DATE,
+    additional_info TEXT
+);
+
+uvicorn main:app --reload
